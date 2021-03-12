@@ -1,7 +1,6 @@
 require("babel-polyfill");
 import path from "path";
 import express from "express";
-import helmet from "helmet";
 // import morgan from "morgan";
 import hbs from "hbs";
 import createError from "http-errors";
@@ -26,7 +25,6 @@ import requireLogin from "./Middleware";
 
 const PORT = process.env.PORT || 5000;
 
-app.use(helmet());
 // app.use(morgan("dev"));
 
 app.set("view engine", "hbs");
