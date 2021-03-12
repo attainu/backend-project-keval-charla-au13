@@ -10,7 +10,6 @@ const app = express();
 
 // import dotenv from "dotenv";
 // dotenv.config();
-// require("dotenv").config();
 require("./helpers/MongoConnect");
 
 import loginRoute from "./routes/LoginRoutes";
